@@ -1,4 +1,6 @@
-import { NgModule } from '@angular/core';
+import { ServerComponent } from './server/server.component';
+// import { ServerComponent } from './../../server.component';
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -6,7 +8,8 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
