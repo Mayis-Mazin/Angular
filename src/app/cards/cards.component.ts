@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cards.component.css']
 })
 export class CardsComponent implements OnInit {
-
-  constructor() { }
+  allowNewPatient=false;
+  constructor() {
+    setTimeout(()=>{
+      this.allowNewPatient=true;
+    },2000)
+   }
 
   ngOnInit(){
   }
