@@ -1,3 +1,5 @@
-<button class="btn btn-primary" [disabled]='!allowNewPatient'  >Add</button>
+<button class="btn btn-primary" [disabled]='!allowNewPatient'  
+(click)="onCreateUser()">Add Patient</button>
+<p>{{userCreationStatus}}</p>
 <app-card></app-card>
 <app-card></app-card>
