@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardsComponent implements OnInit {
   allowNewPatient=false;
   userCreationStatus='No user was created'
+  userName='TestUser'
   constructor() {
     setTimeout(()=>{
       this.allowNewPatient=true;
@@ -19,7 +20,10 @@ export class CardsComponent implements OnInit {
   }
 
   onCreateUser(){
-    this.userCreationStatus='User Was Created'
+    this.userCreationStatus='User Was Created'+this.userName
+  }
+  onUpdateUserName(event: Event){
+    this.userName=(<HTMLInputElement>event.target).value;
   }
 
 }
