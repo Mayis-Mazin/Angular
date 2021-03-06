@@ -15,7 +15,7 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     AppComponent,
     CardComponent,
     CardsComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,

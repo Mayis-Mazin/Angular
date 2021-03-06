@@ -1,17 +1,10 @@
 <label>User Name</label>
-<input type="text"
-class="form-control"
-(input)="onUpdateUserName($event)">
 
-<input type="text"
-class="form-control"
-[(ngModel)]='userName'>
-<!-- <p>{{userName}}</p> -->
 
 <button class="btn btn-primary" [disabled]='!allowNewPatient'  
 (click)="onCreateUser()">Add Patient</button>
 
-<!-- <p>{{userCreationStatus}}</p> -->
+<p>{{userCreationStatus}}</p> 
 <p *ngIf="userCreated" >User was created, user name: {{userName}} </p>
 <app-card></app-card>
 <app-card></app-card>

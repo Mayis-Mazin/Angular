@@ -13,4 +13,10 @@ export class UserService {
     return this.http.get(userURL,httpOptions)
   }
 
+  public getUsrData(id:any){
+    console.log(userURL +'/'+id)
+    return this.http.get(userURL+`/${id}`,httpOptions)
+
+  }
+
 }
