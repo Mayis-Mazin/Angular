@@ -7,9 +7,12 @@ export class CardComponent{
     Weight:number=10;
     height:number=160.3
     heartBeat:number=105
-    cardStatus: string='offline'
-
-    getCardStatus(){
-        return this.cardStatus;
+    userStatus: string='offline'
+constructor(){
+    this.userStatus
+}
+    getUserStatus(){
+        return this.userStatus=Math.random()>0.5?'online':'offline';
     }
+  
 }

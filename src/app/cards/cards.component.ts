@@ -10,6 +10,7 @@ export class CardsComponent implements OnInit {
   allowNewPatient=false;
   userCreationStatus='No user was created'
   userName='TestUser'
+  userCreated=false;
   constructor() {
     setTimeout(()=>{
       this.allowNewPatient=true;
@@ -20,6 +21,7 @@ export class CardsComponent implements OnInit {
   }
 
   onCreateUser(){
+    this.userCreated=true
     this.userCreationStatus='User Was Created'+this.userName
   }
   onUpdateUserName(event: Event){
