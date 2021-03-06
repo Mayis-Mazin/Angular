@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient,HttpHeaders} from '@angular/common/http'
-const userURL='https://jsonplaceholder.typicode.com/posts'
+const userURL='https://jsonplaceholder.typicode.com/users'
 const httpOptions={headers:new HttpHeaders({'Content-Type':'application/json'})}
 
 @Injectable({
