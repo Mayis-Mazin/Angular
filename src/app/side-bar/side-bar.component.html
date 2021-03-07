@@ -1,0 +1,29 @@
+<ng-sidebar-container>
+    <!-- Sidebar -->
+<ng-sidebar [opened]='opened'>
+    <p>Sidebar Contents</p>
+<button (click)='toggleSidebar()'>Close Sidebar</button>
+    <ul class="menu">
+        <li><a routerLink='/upcomingpatients' (click)='toggleSidebar()' >Upcoming Patients</a></li>
+        <li><a routerLink='/labresults' (click)='toggleSidebar()'>Lab Results</a></li>
+        <li><a routerLink='/followups' (click)='toggleSidebar()'>Follow ups</a></li>
+        <li><a routerLink='/message' (click)='toggleSidebar()'>Message</a></li>
+
+    </ul>
+<div>
+    Emergency
+</div>
+<div>
+    Cancel
+</div>
+
+</ng-sidebar>
+<div ng-sidebar-content>
+<!-- Page Header -->
+<button (click)='toggleSidebar()'>
+    Open Sidebar
+</button>
+<router-outlet></router-outlet>
+
+</div>
+</ng-sidebar-container>
