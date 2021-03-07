@@ -14,7 +14,8 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { UpcomingPatientsComponent } from './upcoming-patients/upcoming-patients.component';
 import { LabResultsComponent } from './lab-results/lab-results.component';
 import { FollowUpsComponent } from './follow-ups/follow-ups.component';
-import { MessagesComponent } from './messages/messages.component'
+import { MessagesComponent } from './messages/messages.component';
+import { SearchBarComponent } from './search-bar/search-bar.component'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MessagesComponent } from './messages/messages.component'
     LabResultsComponent,
     FollowUpsComponent,
     MessagesComponent,
+    SearchBarComponent,
   ],
   imports: [
     BrowserModule,
